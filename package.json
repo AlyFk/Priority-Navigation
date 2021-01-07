@@ -1,0 +1,29 @@
+{
+  "name": "navigation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "aly <alichfc@yahoo.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^5.0.1",
+    "eslint": "^7.17.0",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-plugin-babel": "^5.3.1",
+    "eslint-plugin-prettier": "^3.3.1",
+    "html-webpack-plugin": "^4.5.1",
+    "prettier": "^2.2.1",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.11.1",
+    "webpack-cli": "^4.3.1",
+    "webpack-dev-server": "^3.11.1"
+  },
+  "scripts": {
+    "start": "webpack serve",
+    "build": "webpack --env production"
+  }
+}
