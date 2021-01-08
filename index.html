@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <header class="header header--border">
+      <div class="container">
+        <div class="logo">Visual Languages</div>
+        <priority-navigation class="menu">
+          <nav-item class="menu__item menu__item--border--right menu__item--border--left" to="#">Home</nav-item>
+          <nav-item class="menu__item menu__item--border--right" to="#">Shop</nav-item>
+          <nav-item class="menu__item menu__item--border--right" to="#">Component 1</nav-item>
+          <nav-item class="menu__item menu__item--border--right" to="#">Component 2</nav-item>
+          <nested-nav title="Component4" class="menu__item menu__item--border--right">
+            <li class="menu__item__nested">
+              <a class="menu__item__link menu__item__link--big" href="#"
+                >Action</a
+              >
+            </li>
+            <li class="menu__item__nested">
+              <a class="menu__item__link menu__item__link--big" href="#"
+                >Another Action</a
+              >
+            </li></nested-nav
+          >
+          <nested-nav title="Component5" class="menu__item menu__item--border--right ">
+            <li class="menu__item__nested">
+              <a class="menu__item__link menu__item__link--big" href="#"
+                >Action</a
+              >
+            </li>
+            <li class="menu__item__nested">
+              <a class="menu__item__link menu__item__link--big" href="#"
+                >Another Action</a
+              >
+            </li></nested-nav
+          >
+        </priority-navigation>
+      </div>
+    </header>
+  </body>
+</html>
